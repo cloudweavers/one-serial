@@ -102,5 +102,5 @@ func main() {
 	ssh.Handle(sessionHandler)
 	auth := ssh.PublicKeyAuth(publicKeyHandler)
 
-	log.Fatal(ssh.ListenAndServe(":2222", nil, hostKey, auth))
+	log.Fatal(ssh.ListenAndServe(":2225", nil, hostKey, auth))
 }
